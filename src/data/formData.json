@@ -14,6 +14,9 @@
             {
                 "question" : "What is your age?",
                 "type" : "number"
+            },            {
+                "question" : "When did you start dancing?",
+                "type" : "number"
             },
             {
                 "question" : "Bits ID",
@@ -29,6 +32,28 @@
         "clubPhone" : "1234567890",
         "clubWebsite" : "www.xyz.com",
         "questions" : [
+            {
+                "question" : "What is your age?",
+                "type" : "number"
+            },
+            {
+                "question" : "Bits ID",
+                "type" : "small text"
+            }
+        ]
+    },
+    {
+        "clubName" : "Drama Club",
+        "clubDescription" : "Drama Club is a club that acts",
+        "clubPresident" : "John Doe",
+        "clubEmail" : "popo@gmail.com",
+        "clubPhone" : "1234567890",
+        "clubWebsite" : "www.popo.com",
+        "questions" : [
+            {
+                "question" : "What is your name?",
+                "type" : "name"
+            },
             {
                 "question" : "What is your age?",
                 "type" : "number"

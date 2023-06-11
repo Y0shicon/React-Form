@@ -38,10 +38,12 @@ export default function App() {
 
   return (
     <>
-      <button onClick={() => clubIndex === 0? setclubIndex(1): setclubIndex(0)}> Change The index </button>
+      <button onClick={() => clubIndex === data.length - 1? setclubIndex(0): setclubIndex((prev) => prev + 1)}> Change The index </button>
       <br></br>
       <h1>Hi we are the { data.length>1? data[clubIndex]["clubName"]:''}</h1>
-      {questionsSet}
+      <form action="">
+        {questionsSet}
+        </form>
     </>
   )
 }
