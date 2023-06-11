@@ -17,7 +17,7 @@
             },
             {
                 "question" : "Bits ID",
-                "answer" : "small text"
+                "type" : "small text"
             }
         ]
     },
@@ -30,16 +30,12 @@
         "clubWebsite" : "www.xyz.com",
         "questions" : [
             {
-                "question" : "What is your name?",
-                "type" : "name"
-            },
-            {
                 "question" : "What is your age?",
                 "type" : "number"
             },
             {
                 "question" : "Bits ID",
-                "answer" : "small text"
+                "type" : "small text"
             }
         ]
     }

@@ -6,7 +6,7 @@ export default function SmallNumber(props : {question : string}) {
     return (
         <div>
         <label>
-            {props.question}
+            {props.question.concat(" : ")}
             <input
             type="tell"
             value={number}

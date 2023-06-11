@@ -1,12 +1,14 @@
 import { useState } from "react";
 
-export default function NameQuestion() {
+// write a function to make a question asking the user their name
+
+export default function NameQuestion(props : {question:string}) {
     const [name, setName] = useState("");
     
     return (
-        <div>
+        <>
         <label>
-            What is your name?
+            {props.question.concat(" : ")}
             <input
             type="text"
             value={name}
@@ -14,6 +16,6 @@ export default function NameQuestion() {
             />
         </label>
         <p>Hello, {name}!</p>
-        </div>
+        </>
     );
     }
