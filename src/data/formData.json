@@ -1,0 +1,46 @@
+[
+    {
+        "clubName" : "Dance Club",
+        "clubDescription" : "Dance Club is a club that dances",
+        "clubPresident" : "John Doe",
+        "clubEmail" : "abc@gmail.com",
+        "clubPhone" : "1234567890",
+        "clubWebsite" : "www.abc.com",
+        "questions" : [
+            {
+                "question" : "What is your name?",
+                "type" : "name"
+            },
+            {
+                "question" : "What is your age?",
+                "type" : "number"
+            },
+            {
+                "question" : "Bits ID",
+                "answer" : "small text"
+            }
+        ]
+    },
+    {
+        "clubName" : "Music Club",
+        "clubDescription" : "Music Club is a club that sings",
+        "clubPresident" : "John Doe",
+        "clubEmail" : "xyz@gmail.com",
+        "clubPhone" : "1234567890",
+        "clubWebsite" : "www.xyz.com",
+        "questions" : [
+            {
+                "question" : "What is your name?",
+                "type" : "name"
+            },
+            {
+                "question" : "What is your age?",
+                "type" : "number"
+            },
+            {
+                "question" : "Bits ID",
+                "answer" : "small text"
+            }
+        ]
+    }
+]
