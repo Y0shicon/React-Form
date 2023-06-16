@@ -44,7 +44,7 @@ export default function App() {
       <h1>Hi we are the { data.length>1? data[clubIndex]["clubName"]:''}</h1>
       <form action="">
         {questionsSet}
-        </form>
+      </form>
     </>
   )
 }

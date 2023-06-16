@@ -5,20 +5,33 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import App from './routes/Form-Generator.tsx'
+import FormGenerator from './routes/Form-Generator.tsx'
+import Form from './routes/Form.tsx'
+import AllClubs from './routes/AllClubsPage.tsx'
 import ErrorPage from './routes/ErrorPage.tsx';
+import NavBar from './NavBar.tsx';
 
 import './index.css'
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <h1><a href='/Form'>Go to Form</a></h1>,
+    element: <NavBar />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/clubs",
+    element: <AllClubs />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/clubs/:id",
+    element: <Form/>,
     errorElement: <ErrorPage />,
   },
   {
     path: "/Form",
-    element: <App />,
+    element: <FormGenerator />,
     errorElement: <ErrorPage />,
   }
 ]);
