@@ -6,8 +6,8 @@ import { useEffect, useState } from "react"
 
 export default function App() {
   const [clubIndex, setclubIndex] = useState(0)
-  const [questionsSet, setQuestionsSet] = useState([])
-  const [data, setData] = useState([])
+  const [questionsSet, setQuestionsSet] = useState<any>([])
+  const [data, setData] = useState<any>([])
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch('src/data/formData.json')

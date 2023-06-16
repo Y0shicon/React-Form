@@ -4,7 +4,9 @@ import { Link } from "react-router-dom";
 export default function AllClubs() {
 
     // Making a variable to contain all the club names when they are fetched
-    const [data, setData] = useState([])
+
+    //Give the data a type of any so that it can be used in the map function below
+    const [data, setData] = useState<any>([])
     const [clubNames, setClubNames] = useState([])
 
     // Fetching the data from the json file

@@ -9,7 +9,7 @@ export default function App() {
 
     const clubName = useParams().id
     const [questionsSet, setQuestionsSet] = useState([])
-    const [data, setData] = useState([])
+    const [data, setData] = useState<any>([])
     const [clubData, setClubData] = useState({} as any)
 
     useEffect(() => {
