@@ -27,7 +27,7 @@ export default function AllClubs() {
         }
     }, [data])
 
-    const clubsList = clubNames.map((clubName: any) => <li key={clubName}><Link to= {`/Clubs/${clubName}`}>{clubName}</Link></li>)
+    const clubsList = clubNames.map((clubName: any) => <li key={clubName}><Link to= {`/React-Form/Clubs/${clubName}`}>{clubName}</Link></li>)
 
     return (
         <div>
