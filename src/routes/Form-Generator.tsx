@@ -10,7 +10,10 @@ export default function App() {
   const [data, setData] = useState<any>([])
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch('src/data/formData.json')
+      const response = await fetch('src/data/formData.json',
+      {headers: 
+          {'Content-Type': 'application/json','Accept': 'application/json'}
+      })
       const data_json = await response.json()
       setData(data_json)
     }
