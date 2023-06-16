@@ -15,22 +15,22 @@ import './index.css'
 
 const router = createBrowserRouter([
   {
-    path: "/React-Form",
+    path: "/",
     element: <NavBar />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/React-Form/clubs",
+    path: "/clubs",
     element: <AllClubs />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/React-Form/clubs/:id",
+    path: "/clubs/:id",
     element: <Form/>,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/React-Form/Form",
+    path: "/Form",
     element: <FormGenerator />,
     errorElement: <ErrorPage />,
   }
