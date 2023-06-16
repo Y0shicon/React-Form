@@ -5,7 +5,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import App from './routes/App.tsx'
+import App from './routes/Form-Generator.tsx'
 import ErrorPage from './routes/ErrorPage.tsx';
 
 import './index.css'

@@ -1,6 +1,7 @@
 import NameQuestion from "../components/NameQuestion"
 import SmallNumber from "../components/SmallNumber"
 import SmallTextQuestion from "../components/SmallTextQuestion"
+
 import { useEffect, useState } from "react"
 
 export default function App() {
