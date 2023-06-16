@@ -20,17 +20,17 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: "/clubs",
+    path: "/React-Form/clubs",
     element: <AllClubs />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/clubs/:id",
+    path: "/React-Form/clubs/:id",
     element: <Form/>,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/Form",
+    path: "/React-Form/Form",
     element: <FormGenerator />,
     errorElement: <ErrorPage />,
   }
