@@ -1,6 +1,6 @@
-import NameQuestion from "./components/NameQuestion"
-import SmallNumber from "./components/smallNumber"
-import SmallTextQuestion from "./components/SmallTextQuestion"
+import NameQuestion from "../components/NameQuestion"
+import SmallNumber from "../components/SmallNumber"
+import SmallTextQuestion from "../components/SmallTextQuestion"
 import { useEffect, useState } from "react"
 
 export default function App() {
@@ -39,7 +39,7 @@ export default function App() {
   return (
     <>
       <button onClick={() => clubIndex === data.length - 1? setclubIndex(0): setclubIndex((prev) => prev + 1)}> Change The index </button>
-      <br></br>
+      <br />
       <h1>Hi we are the { data.length>1? data[clubIndex]["clubName"]:''}</h1>
       <form action="">
         {questionsSet}
