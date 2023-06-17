@@ -8,6 +8,7 @@ import {
 import FormGenerator from './routes/Form-Generator.tsx'
 import Form from './routes/Form.tsx'
 import AllClubs from './routes/AllClubsPage.tsx'
+import ClubPage from './routes/ClubPage.tsx'
 import ErrorPage from './routes/ErrorPage.tsx';
 import NavBar from './NavBar.tsx';
 
@@ -16,23 +17,27 @@ import './index.css'
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <NavBar />,
-    errorElement: <ErrorPage />,
+    element: <NavBar />
   },
   {
     path: "/clubs",
-    element: <AllClubs />,
-    errorElement: <ErrorPage />,
+    element: <AllClubs />
   },
   {
     path: "/clubs/:id",
-    element: <Form/>,
-    errorElement: <ErrorPage />,
+    element: <ClubPage/>
+  },
+  {
+    path:"/clubs/:id/recruitment",
+    element:<Form/>
   },
   {
     path: "/Form",
-    element: <FormGenerator />,
-    errorElement: <ErrorPage />,
+    element: <FormGenerator />
+  },
+  {
+    path :"/*",
+    element:<ErrorPage/>
   }
 ]);
 
