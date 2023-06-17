@@ -12,7 +12,7 @@ export default function AllClubs() {
     // Fetching the data from the json file
     useEffect (() => {
         const fetchData = async () => {
-            const response = await fetch('src/data/formData.json')
+            const response = await fetch('/data/formData.json')
             const data_json = await response.json()
             setData(data_json)
         }
