@@ -1,6 +1,5 @@
 import { useState, useEffect} from "react";
 import { useParams, Link } from "react-router-dom";
-import clubPageCSS from "./clubpage.module.css"
 
 export default function AdminClubPage() {
     const clubName = useParams().id;

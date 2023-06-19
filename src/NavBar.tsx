@@ -1,7 +1,6 @@
-import { Link, useActionData } from "react-router-dom";
+import { Link} from "react-router-dom";
 import navbar from './NavBar.module.css'
 import { useEffect } from "react";
-import axios from "axios";
 
 const newItem = {
     "clubName": "Dance Club 2",

@@ -3,11 +3,7 @@ import {useState} from "react";
 import AdminClubPage from "./AdminClubPage.tsx"
 import UserClubPage from "./UserClubPage.tsx"
 
-const BUTTON_STYLES = {
-    position : "absolute",
-    top : "10px",
-    right : "10px"
-}
+import clubPageCSS from "./ClubPage.module.css"
 
 export default function ClubPage() {
 
@@ -21,7 +17,7 @@ export default function ClubPage() {
     return (
         <>
             {isAdmin ? <AdminClubPage /> : <UserClubPage />}
-            <button onClick={handleOnClick} style={BUTTON_STYLES}>{isAdmin ? 'Logout' : 'Login as Admin'}</button>
+            <button onClick={handleOnClick} className={clubPageCSS.loginButton}>{isAdmin ? 'Logout' : 'Login as Admin'}</button>
         </>
     )
 }
