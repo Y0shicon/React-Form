@@ -24,8 +24,6 @@ export default function App() {
         fetchData()
       }, [])
 
-    // When data is loaded, set clubData to the first club
-    // That is when data.length becomes > 0, and hence the following code only runs after the API is loaded
     useEffect(() => {
         if (data.length > 0) {
             const clubData = data.filter((club: any) => club["clubName"] === clubName)[0]
